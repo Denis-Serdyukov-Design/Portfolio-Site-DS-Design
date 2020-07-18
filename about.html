@@ -29,18 +29,18 @@
   <body>
 
     <header>
-      <div>
+      <div class="container">
 
         <!-- DS Design logo that will link to the website Home page. -->
-        <img src="https://via.placeholder.com/200x100?text=DS%20Design" alt="DS Design">
+        <a href="index.html">
+          <img src="Logo_DSD_Small_Black.png" alt="DS Design" class="logo">
+        </a>
 
         <!-- Navigation bar found at the right side of the header. -->
         <nav>
-          <ul class="nav-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
+          <ul>
+            <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
             <li><a href="img/Serdyukov_Denis_UX_Designer.pdf" target="_blank">RESUME</a></li>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
     <main>
 
       <!-- Page heading. -->
-      <div>
+      <div id="hero-about">
         <div>
           <h1>ABOUT</h1>
         </div>
@@ -59,7 +59,7 @@
 
       <!-- Content block. -->
       <div>
-        <div>
+        <div class="container">
 
           <!-- Profile photo. -->
           <picture>
@@ -88,7 +88,7 @@
               <!-- Row for skills and tools blocks. -->
               <div>
 
-                <div>
+                <div class="skills">
                   <h3>Design Process</h3>
                   <ul>
                     <li>Wireframing - Paper & Digital</li>
@@ -102,7 +102,7 @@
                   </ul>
                 </div>
 
-                <div>
+                <div class="skills">
                   <h3>Tools</h3>
                   <ul>
                     <li>Adobe Photoshop</li>
@@ -131,13 +131,13 @@
     </main>
 
 
-    <footer id="contact">
-      <div>
+    <footer id="CONTACT">
+      <div class="container">
         <h2>Let's chat!</h2>
         <p>If you are interested in taking the user experience of your product to the next level, don't hesitate to reach out. Let's design together!</p>
 
         <!-- Social media buttons. -->
-        <div>
+        <div class="social-icons">
           <ul>
             <li><a href="mailto:denis@ds-design.online">
               <!-- Gmail Icon. -->
