@@ -190,22 +190,35 @@ nav > ul > li > a:active {
   max-width: 150px;
 }
 
+
+.social-link {
+  display: block;
+}
+
+
 .social-icons {
-  display: inline-block;
+  display: block;
+  text-align: center;
 }
 
 .social-icons > ul {
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-/*
 .social-icons > ul > li {
+  padding: 0 5px;
+}
+
+.social-li {
   display: inline-block;
 }
-*/
 
 .social-icons > ul > li > a > svg {
   max-width: 35px;
+  max-height: 35px;
+  height: 100%;
+  width: 100%;
 }
 
 .skills {
@@ -277,4 +290,8 @@ nav > ul > li > a:active {
   color: #181818;
   margin: 0;
   padding: 1.5em 0 1em 0;
+}
+
+#COPYRIGHT {
+  text-align: center;
 }
