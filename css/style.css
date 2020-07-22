@@ -14,6 +14,12 @@ img {
   width: 100%;
 }
 
+svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 26px;
@@ -79,13 +85,15 @@ a {
   text-decoration: none;
 }
 
+/*
 a:visited {
   color: #9c9c9c;
 }
+*/
 
 a:hover,
 a:focus {
-  color: #008AFC;
+  color: #4273B9;
   text-decoration: none;
 }
 
@@ -121,6 +129,26 @@ a:active {
   text-align: center;
 }
 
+@keyframes plane-move {
+  0% {transform: translate(0, 0) rotate(0);}
+  11% {transform: translate(100px, -45px) rotate(2deg);}
+  22% {transform: translate(200px, -80px) rotate(4deg);}
+  33% {transform: translate(300px, -110px) rotate(6deg);}
+  44% {transform: translate(400px, -125px) rotate(8deg);}
+  55% {transform: translate(500px, -125px) rotate(10deg);}
+  66% {transform: translate(600px, -115px) rotate(11deg);}
+  77% {transform: translate(700px, -95px) rotate(12deg);}
+  88% {transform: translate(800px, -70px) rotate(13deg);}
+  100% {transform: translate(900px, -40px) rotate(14deg);}
+}
+
+.plane {
+  animation-duration: 7s;
+  animation-name: plane-move;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
 
 
 /* Highly specific styles. */
@@ -144,9 +172,11 @@ nav > ul > li > a {
   text-transform: uppercase;
 }
 
+/*
 nav > ul > li > a:visited {
   color: #9c9c9c;
 }
+*/
 
 nav > ul > li > a:active {
   color: #4273B9;
@@ -160,12 +190,8 @@ nav > ul > li > a:active {
   line-height: 1.4;
   padding: 8px;
   border-radius: 3px;
-  transition: 0.3s opacity;
-}
-
-.button:visited {
-  background-color: #9c9c9c;
-  color: #ffffff;
+  transition-duration: 0.3s;
+  transition-property: all;
 }
 
 .button:hover {
@@ -174,12 +200,22 @@ nav > ul > li > a:active {
   text-decoration: none;
 }
 
+/*
+.button:visited {
+  background-color: #9c9c9c;
+  color: #ffffff;
+}
+*/
 
 
 /* Layout styling */
 
 .container {
   padding: 0px 15px;
+}
+
+.container p {
+  text-align: center;
 }
 
 .row {
@@ -232,6 +268,10 @@ nav > ul > li > a:active {
 .skills > ul > li {
   display: block;
   text-align: center;
+}
+
+.about-me p {
+  text-align: justify;
 }
 
 
@@ -292,6 +332,146 @@ nav > ul > li > a:active {
   padding: 1.5em 0 1em 0;
 }
 
+#CONTACT {
+  display: block;
+  margin-top: 40px;
+}
+
 #COPYRIGHT {
   text-align: center;
+}
+
+
+/* Responsive scaling. */
+
+/* ===========================================
+Medium devices (640px and larger)
+============================================*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding: 5px 0;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+  }
+
+  .skills {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .skills h3 {
+    text-align: left;
+  }
+
+  .skills > ul > li {
+    text-align: left;
+    padding: auto;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #HERO span {
+    display: block;
+  }
+
+  #PORTFOLIO p {
+    text-align: left;
+  }
+
+  .profile-photo {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 15px;
+  }
+
+  [class*="col-"] h3 {
+    margin-top: 0;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+
+/* ===========================================
+Large devices (1024px and larger)
+============================================*/
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2, h3 {
+    font-size: 21px;
+  }
+
+  .row {
+    margin: 80px 0;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  #HERO .container {
+    max-width: 60%;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+  [class*="col-"] {
+    padding: 0 30px;
+  }
+}
+
+
+/* ===========================================
+X-Large devices (1440px and larger)
+============================================*/
+@media only screen and (min-width: 1440px) {
+
 }
