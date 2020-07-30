@@ -11,6 +11,7 @@
 
     <!-- Embedded fonts. -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4be68d16a.js" crossorigin="anonymous"></script>
 
     <title>
       About Denis Serdyukov
@@ -31,6 +32,8 @@
     <header>
       <div class="container">
 
+        <div class="navtoggle" id="myNavToggle">
+
         <!-- DS Design logo that will link to the website Home page. -->
         <a href="index.html">
           <img src="Logo_DSD_Small_Black.png" alt="DS Design" class="logo">
@@ -42,13 +45,15 @@
             <li><a href="index.html#PORTFOLIO">PORTFOLIO</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="img/Serdyukov_Denis_UX_Designer.pdf" target="_blank">RESUME</a></li>
+            <li><a href="javascript:void(0);" class="icon hamicon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
 
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class="add-space">
 
       <!-- Page heading. -->
       <div id="hero-about">
@@ -153,6 +158,7 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/scripts.js"></script>
 
   </body>

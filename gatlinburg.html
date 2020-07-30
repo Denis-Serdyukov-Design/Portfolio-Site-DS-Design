@@ -11,6 +11,7 @@
 
     <!-- Embedded fonts. -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4be68d16a.js" crossorigin="anonymous"></script>
 
     <title>
       Gatlinburg Sky Park
@@ -31,6 +32,8 @@
     <header>
       <div class="container">
 
+        <div class="navtoggle" id="myNavToggle">
+
         <!-- DS Design logo that will link to the website Home page. -->
         <a href="index.html">
           <img src="Logo_DSD_Small_Black.png" alt="DS Design" class="logo">
@@ -42,13 +45,15 @@
             <li><a href="index.html#PORTFOLIO">PORTFOLIO</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="img/Serdyukov_Denis_UX_Designer.pdf" target="_blank">RESUME</a></li>
+            <li><a href="javascript:void(0);" class="icon hamicon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
 
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class="add-space">
 
       <!-- Intro strip with background image. -->
       <div id="banner-gatlinburg">
@@ -78,7 +83,7 @@
 
             <!-- Start of row for image and text columns. -->
             <div>
-              <div>
+              <div class="col-lg-5">
                 <picture>
                   <source srcset="img/gatlinburg/large/Diag_Sequence.jpg" media="(max-width:767px)">
                   <img src="img/gatlinburg/small/S_Diag_Sequence.jpg" alt="Gatlinburg user flow diagram">
@@ -161,19 +166,19 @@
             <div>
 
               <!-- Vista Point column (1). -->
-              <div class="vignette">
+              <div class="vignette col-lg-4">
                 <img src="img/gatlinburg/large/Axon_Vignette1.jpg" alt="Vista Point axonometric render">
                 <h3>Vista Point</h3>
                 <p>Augmented reality and balconies provide breathtaking views of the Smokies and Gatlinburg.</p>
               </div>
               <!-- Birdwatcher's Balcony column (2). -->
-              <div class="vignette">
+              <div class="vignette col-lg-4">
                 <img src="img/gatlinburg/large/Axon_Vignette2.jpg" alt="Birdwatcher's Balcony axonometric render">
                 <h3>Birdwatcher's Balcony</h3>
                 <p>The balconies project out to provide birdwatchers a closer reach to foliage and set up cameras.</p>
               </div>
               <!-- Picnic column (3). -->
-              <div class="vignette">
+              <div class="vignette col-lg-4">
                 <img src="img/gatlinburg/large/Axon_Vignette3.jpg" alt="Picnic axonometric render">
                 <h3>Picnic</h3>
                 <p>A place for visitors to enjoy relaxing lunch in the trees.</p>
@@ -194,13 +199,13 @@
               <!-- Start of Row 1 for vignette columns. -->
               <div>
                 <!-- Play Station column (1). -->
-                <div class="vignette">
+                <div class="vignette col-lg-6">
                   <img src="img/gatlinburg/large/Axon_Vignette10.jpg" alt="Play Station axonometric render">
                   <h3>Play Station</h3>
                   <p>A place to pause and play! Take the slide to The Hub!</p>
                 </div>
                 <!-- Rolling Hill column (2). -->
-                <div class="vignette">
+                <div class="vignette col-lg-6">
                   <img src="img/gatlinburg/large/Axon_Vignette9.jpg" alt="Rolling Hill axonometric render">
                   <h3>Rolling Hill</h3>
                   <p>Enjoy rolling down the hill or sledging/tubing om winter.</p>
@@ -211,13 +216,13 @@
               <!-- Start of Row 2 for vignette columns. -->
               <div>
                 <!-- The Hub column (1). -->
-                <div class="vignette">
+                <div class="vignette col-lg-6">
                   <img src="img/gatlinburg/large/Axon_Vignette8.jpg" alt="The Hub axonometric render">
                   <h3>The Hub</h3>
                   <p>Entry/exit point for the Sky Bridge, get information and orient yourself before diving into the adventure.</p>
                 </div>
                 <!-- Cascading Exhibit column (2). -->
-                <div class="vignette">
+                <div class="vignette col-lg-6">
                   <img src="img/gatlinburg/large/Axon_Vignette7.jpg" alt="Cascading Exhibit axonometric render">
                   <h3>Cascading Exhibit</h3>
                   <p>Path to help you learn about the ecology and history of the Smokies and 2016 forest fire.</p>
@@ -228,13 +233,13 @@
               <!-- Start of Row 3 for vignette columns. -->
               <div>
                 <!-- Water Garden column (1). -->
-                <div class="vignette">
+                <div class="vignette col-lg-6">
                   <img src="img/gatlinburg/large/Axon_Vignette6.jpg" alt="Water Garden axonometric render">
                   <h3>Water Garden</h3>
                   <p>Enjoy the Harmony of water as music!</p>
                 </div>
                 <!-- Amphitheatre column (2). -->
-                <div class="vignette">
+                <div class="vignette col-lg-6">
                   <img src="img/gatlinburg/large/Axon_Vignette5.jpg" alt="Amphitheatre axonometric render">
                   <h3>Amphitheatre</h3>
                   <p>Amphitheatre with tiered seating to take a moment to relax along the journey or to host events.</p>
@@ -284,9 +289,9 @@
               <p>First, it has to keep giving. It has to teach us, to open our minds, to let us discover - this potent experience has to transcend what one can experience in a single visit and keep us coming back for more. And second, it has to offer a special space for every single one of us. Not a one-size-fits-all, postcard-scope environment, but a different little piece of the whole that speaks to each unique visitor, a part of the whole that each person can "own"...a part that, despite the distance and foreign environment feels a little like home.</p>
 
               <!-- Start of row for social media post columns (changes from a 2x1 to a 1x2 at mobile break point). -->
-              <div>
+              <div class="gat-social-row">
                 <!-- Social media column 1. -->
-                <div class="social-column">
+                <div class="social-column col-lg-6">
                   <picture>
                     <source srcset="img/gatlinburg/large/Social_Post1.jpg" media="(max-width:767px)">
                     <img src="img/gatlinburg/small/S_Social_Post1.jpg" alt="Family experience on social media">
@@ -294,7 +299,7 @@
                 </div>
 
                 <!-- Social media column 2. -->
-                <div class="social-column">
+                <div class="social-column col-lg-6">
                   <picture>
                     <source srcset="img/gatlinburg/large/Social_Post2.jpg" media="(max-width:767px)">
                     <img src="img/gatlinburg/small/S_Social_Post2.jpg" alt="Architectural experience on social media">
@@ -347,6 +352,7 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/scripts.js"></script>
 
   </body>

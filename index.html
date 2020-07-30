@@ -11,6 +11,7 @@
 
     <!-- Embedded fonts. -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4be68d16a.js" SameSite='None' crossorigin="anonymous"></script>
 
     <title>
       Denis Serdyukov Design
@@ -31,6 +32,8 @@
     <header>
       <div class="container">
 
+        <div class="navtoggle" id="myNavToggle">
+
         <!-- DS Design logo that will link to the website Home page. -->
         <a href="index.html">
           <img src="Logo_DSD_Small_Black.png" alt="DS Design" class="logo">
@@ -39,16 +42,18 @@
         <!-- Navigation bar found at the right side of the header. -->
         <nav>
           <ul>
-            <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+            <li><a href="#PORTFOLIO" onclick="menuToggle()">PORTFOLIO</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="img/Serdyukov_Denis_UX_Designer.pdf" target="_blank">RESUME</a></li>
+            <li><a href="javascript:void(0);" class="icon hamicon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
 
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class="add-space">
 
       <!-- Hero section. -->
       <div id="HERO">
@@ -78,7 +83,7 @@ The future belongs to the user - I can take you there.</p>
               <div class="col-md-6 col-lg-5">
                 <h3>ASK AWAY App</h3>
                 <p>A sleek, intuitive, and versatile approach to receiving expert advice whenever and wherever you need it.</p>
-                <a href="" class="button">Read More</a>
+                <a href="" class="button ask-away-button">Read More</a>
               </div>
             </div>
             <!-- End of first portfolio project. -->
@@ -327,6 +332,7 @@ The future belongs to the user - I can take you there.</p>
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/scripts.js"></script>
 
   </body>

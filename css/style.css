@@ -58,12 +58,16 @@ h3 {
 
 header {
   background-color: #ffffff;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px 0;
-  position: relative;
+  position: fixed;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.2);
   box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.2);
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  width: 100%;
 }
 
 body {
@@ -74,6 +78,7 @@ body {
   color: #363636;
   background-color: #ffffff;
   text-align: justify;
+  /*padding-top: 40px;*/
 }
 
 ul {
@@ -129,6 +134,14 @@ a:active {
   text-align: center;
 }
 
+.nav-up {
+  top: -60px;
+}
+
+.add-space {
+  padding-top: 60px;
+}
+
 @keyframes plane-move {
   0% {transform: translate(0, 0) rotate(0);}
   11% {transform: translate(100px, -45px) rotate(2deg);}
@@ -153,18 +166,14 @@ a:active {
 
 /* Highly specific styles. */
 
-
-nav {
+/* nav {
   display: inline-block;
   width: 100%;
-}
+} */
 
 nav > ul {
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -215,7 +224,7 @@ nav > ul > li > a:active {
 }
 
 .container p {
-  text-align: center;
+  text-align: justify;
 }
 
 .row {
@@ -223,7 +232,8 @@ nav > ul > li > a:active {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 80px;
+  margin-top: 2px;
 }
 
 
@@ -274,6 +284,38 @@ nav > ul > li > a:active {
   text-align: justify;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+.hamicon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+  padding-right: 0;
+}
+
 
 #HERO {
   background-image: url('../img/home_about/Banner_Large.jpg');
@@ -322,6 +364,8 @@ nav > ul > li > a:active {
 }
 
 #tower-activities {
+  display: block;
+  text-align: center;
   padding-bottom: 15px;
   border-bottom: 1px solid #3d3d3d;
 }
@@ -347,7 +391,7 @@ nav > ul > li > a:active {
 /* ===========================================
 Medium devices (640px and larger)
 ============================================*/
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -356,7 +400,15 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    padding: 5px 0;
+    padding: 8px 0 0 0;
+  }
+
+  nav > ul {
+    margin: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
   }
 
   p, li {
@@ -388,6 +440,15 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .strip-black {
+    padding: 30px 60px;
+    margin: 35px 0;
+  }
+
+  .social-column img {
+    padding: 30px 15px;
+  }
+
   #HERO span {
     display: block;
   }
@@ -402,6 +463,22 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .nav-up {
+    top: -80px;
+  }
+
+  .add-space {
+    padding-top: 80px;
   }
 
   [class*="col-"] {
@@ -432,6 +509,15 @@ Large devices (1024px and larger)
     margin-right: auto;
   }
 
+  .logo {
+    max-width: 100px;
+    margin-bottom: 0;
+  }
+
+  main img {
+    margin: 30px 0;
+  }
+
   p, li {
     font-size: 16px;
   }
@@ -444,12 +530,24 @@ Large devices (1024px and larger)
     font-size: 21px;
   }
 
+  h2 {
+    margin-top: 60px;
+  }
+
   .row {
     margin: 80px 0;
   }
 
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
   .col-lg-5 {
     width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
   }
 
   .col-lg-7 {
