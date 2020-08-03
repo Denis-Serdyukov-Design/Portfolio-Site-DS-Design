@@ -64,8 +64,9 @@ header {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.2);
   box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.2);
+  top: 0;
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
   width: 100%;
 }
@@ -106,21 +107,65 @@ a:active {
   color: #4273B9;
 }
 
+.local-nav-menu {
+  position: fixed;
+  text-align: right;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-transform: none;
+}
+
+.local-nav-menu span {
+  display: none;
+}
+
+.local-nav-menu .ln-active {
+  display: inline-block;
+}
+
+.local-nav-link {
+  display: block;
+  padding: 0.1em;
+}
+
+.active {
+  text-transform: capitalize;
+  color: red;
+}
+
+.local-nav-menu i {
+  font-size: 11px;
+  margin-left: 6px;
+}
+
+.ln-active {
+  text-transform: capitalize;
+}
+
+/*
+.ln-hidden {
+  display: none;
+}
+*/
+
 .strip-black {
   background-color: #363636;
   color: #ffffff;
   padding: 30px 15px;
-  margin: 35px 0;
+  /*margin: 35px 0;*/
 }
 
 .strip-black-text {
   color: #ffffff;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
+
 
 .strip-black .social-column {
   padding: 10px 0;
 }
+
 
 .vignette {
   padding: 20px 0;
@@ -446,7 +491,7 @@ Medium devices (640px and larger)
   }
 
   .social-column img {
-    padding: 30px 15px;
+    padding: 0 15px;
   }
 
   #HERO span {
@@ -535,7 +580,7 @@ Large devices (1024px and larger)
   }
 
   .row {
-    margin: 80px 0;
+    margin: 60px 0;
   }
 
   .col-lg-4 {
