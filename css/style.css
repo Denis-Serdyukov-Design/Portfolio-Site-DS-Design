@@ -108,6 +108,11 @@ a:active {
 }
 
 .local-nav-menu {
+  display: none;
+}
+
+/*
+.local-nav-menu {
   position: fixed;
   text-align: right;
   right: 30px;
@@ -143,10 +148,6 @@ a:active {
   text-transform: capitalize;
 }
 
-/*
-.ln-hidden {
-  display: none;
-}
 */
 
 .strip-black {
@@ -615,5 +616,42 @@ Large devices (1024px and larger)
 X-Large devices (1440px and larger)
 ============================================*/
 @media only screen and (min-width: 1440px) {
+
+  .local-nav-menu {
+    display: block;
+    position: fixed;
+    text-align: right;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-transform: none;
+  }
+
+  .local-nav-menu span {
+    display: none;
+  }
+
+  .local-nav-menu .ln-active {
+    display: inline-block;
+  }
+
+  .local-nav-link {
+    display: block;
+    padding: 0.1em;
+  }
+
+  .active {
+    text-transform: capitalize;
+    color: red;
+  }
+
+  .local-nav-menu i {
+    font-size: 11px;
+    margin-left: 6px;
+  }
+
+  .ln-active {
+    text-transform: capitalize;
+  }
 
 }
