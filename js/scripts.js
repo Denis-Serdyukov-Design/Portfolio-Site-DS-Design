@@ -182,12 +182,12 @@ function hasScrolled() {
   if (st > lastScrollTop && st > navBarHeight) {
     //Scroll down event.
     $('header').removeClass('nav-down').addClass('nav-up');
-    $('main').removeClass('add-space').addClass('no-space');
+    //$('main').removeClass('add-space').addClass('no-space');
     x.className = 'navtoggle';
   } else {
     //Scroll up event.
     $('header').removeClass('nav-up').addClass('nav-down');
-    $('main').removeClass('no-space').addClass('add-space');
+    //$('main').removeClass('no-space').addClass('add-space');
   }
 
   lastScrollTop = st;

@@ -188,6 +188,10 @@ a:active {
   padding-top: 60px;
 }
 
+.top-of-page {
+  margin-top: 60px;
+}
+
 @keyframes plane-move {
   0% {transform: translate(0, 0) rotate(0);}
   11% {transform: translate(100px, -45px) rotate(2deg);}
@@ -427,6 +431,10 @@ nav > ul > li > a:active {
   margin-top: 40px;
 }
 
+#CONTACT p {
+  text-align: center;
+}
+
 #COPYRIGHT {
   text-align: center;
 }
@@ -520,11 +528,15 @@ Medium devices (640px and larger)
   }
 
   .nav-up {
-    top: -80px;
+    top: -85px;
   }
 
   .add-space {
     padding-top: 80px;
+  }
+
+  .top-of-page {
+    margin-top: 80px;
   }
 
   [class*="col-"] {
@@ -561,7 +573,7 @@ Large devices (1024px and larger)
   }
 
   main img {
-    margin: 30px 0;
+    margin-bottom: 30px;
   }
 
   p, li {
@@ -578,6 +590,10 @@ Large devices (1024px and larger)
 
   h2 {
     margin-top: 60px;
+  }
+
+  .collapsed h2 {
+    margin-top: 0;
   }
 
   .row {
