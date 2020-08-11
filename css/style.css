@@ -52,18 +52,17 @@ h3 {
   line-height: 1.6;
   text-transform: uppercase;
   color: #363636;
-  padding-top: 0px;
+  padding-top: 0;
   text-align: center;
 }
 
 header {
   background-color: #ffffff;
-  /* text-align: center; */
   padding: 10px 0;
   position: fixed;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.2);
-  -moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.2);
-  box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.2);
+  -webkit-box-shadow: 0 4px 10px 0 rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 4px 10px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0 4px 10px 0 rgba(50, 50, 50, 0.2);
   top: 0;
   transition-property: all;
   transition-duration: 0.25s;
@@ -79,12 +78,11 @@ body {
   color: #363636;
   background-color: #ffffff;
   text-align: justify;
-  /*padding-top: 40px;*/
 }
 
 ul {
   list-style: none;
-  }
+}
 
 a {
   color: #363636;
@@ -99,12 +97,12 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #4273B9;
+  color: #4273b9;
   text-decoration: none;
 }
 
 a:active {
-  color: #4273B9;
+  color: #4273b9;
 }
 
 .local-nav-menu {
@@ -154,19 +152,15 @@ a:active {
   background-color: #363636;
   color: #ffffff;
   padding: 30px 15px;
-  /*margin: 35px 0;*/
 }
 
 .strip-black-text {
   color: #ffffff;
-  /*padding-bottom: 10px;*/
 }
-
 
 .strip-black .social-column {
   padding: 10px 0;
 }
-
 
 .vignette {
   padding: 20px 0;
@@ -193,16 +187,16 @@ a:active {
 }
 
 @keyframes plane-move {
-  0% {transform: translate(0, 0) rotate(0);}
-  11% {transform: translate(100px, -45px) rotate(2deg);}
-  22% {transform: translate(200px, -80px) rotate(4deg);}
-  33% {transform: translate(300px, -110px) rotate(6deg);}
-  44% {transform: translate(400px, -125px) rotate(8deg);}
-  55% {transform: translate(500px, -125px) rotate(10deg);}
-  66% {transform: translate(600px, -115px) rotate(11deg);}
-  77% {transform: translate(700px, -95px) rotate(12deg);}
-  88% {transform: translate(800px, -70px) rotate(13deg);}
-  100% {transform: translate(900px, -40px) rotate(14deg);}
+  0% { transform: translate(0, 0) rotate(0); }
+  11% { transform: translate(100px, -45px) rotate(2deg); }
+  22% { transform: translate(200px, -80px) rotate(4deg); }
+  33% { transform: translate(300px, -110px) rotate(6deg); }
+  44% { transform: translate(400px, -125px) rotate(8deg); }
+  55% { transform: translate(500px, -125px) rotate(10deg); }
+  66% { transform: translate(600px, -115px) rotate(11deg); }
+  77% { transform: translate(700px, -95px) rotate(12deg); }
+  88% { transform: translate(800px, -70px) rotate(13deg); }
+  100% { transform: translate(900px, -40px) rotate(14deg); }
 }
 
 .plane {
@@ -212,7 +206,6 @@ a:active {
   animation-direction: normal;
   animation-timing-function: linear;
 }
-
 
 /* Highly specific styles. */
 
@@ -238,7 +231,7 @@ nav > ul > li > a:visited {
 */
 
 nav > ul > li > a:active {
-  color: #4273B9;
+  color: #4273b9;
 }
 
 .button {
@@ -254,7 +247,7 @@ nav > ul > li > a:active {
 }
 
 .button:hover {
-  background-color: #4273B9;
+  background-color: #4273b9;
   color: #ffffff;
   text-decoration: none;
 }
@@ -266,11 +259,10 @@ nav > ul > li > a:active {
 }
 */
 
-
 /* Layout styling */
 
 .container {
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
 .container p {
@@ -286,11 +278,9 @@ nav > ul > li > a:active {
   margin-top: 2px;
 }
 
-
 .social-link {
   display: block;
 }
-
 
 .social-icons {
   display: block;
@@ -318,7 +308,7 @@ nav > ul > li > a:active {
 }
 
 .skills {
-  width: 100%
+  width: 100%;
 }
 
 .skills > ul {
@@ -334,7 +324,8 @@ nav > ul > li > a:active {
   text-align: justify;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -351,7 +342,6 @@ nav > ul > li > a:active {
   padding: 10px 0;
   font-size: 24px;
   text-align: center;
-  /* border-top: 1px solid rgba(0, 0, 0, 0.5); */
 }
 
 .navtoggle.responsive li:last-child {
@@ -366,13 +356,11 @@ nav > ul > li > a:active {
   padding-right: 0;
 }
 
-
 #HERO {
-  background-image: url('../img/home_about/Banner_Large.jpg');
+  background-image: url('../img/home_about/Banner_Large_Dark.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: multiply;
   display: inline-block;
   background-color: #3d3d3d;
   color: #ffffff;
@@ -396,15 +384,14 @@ nav > ul > li > a:active {
 }
 
 #banner-gatlinburg {
-  background-image: url('../img/gatlinburg/small/S_Banner.jpg');
+  background-image: url('../img/gatlinburg/small/S_Banner_Dark.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: multiply;
   display: inline-block;
   background-color: #3d3d3d;
   color: #ffffff;
-  padding: 30px 0;
+  padding: 40px 0;
   width: 100%;
 }
 
@@ -423,7 +410,7 @@ nav > ul > li > a:active {
 #hero-about h1 {
   color: #181818;
   margin: 0;
-  padding: 1.5em 0 1em 0;
+  padding: 1.5em 0 1em;
 }
 
 #CONTACT {
@@ -439,12 +426,11 @@ nav > ul > li > a:active {
   text-align: center;
 }
 
-
 /* Responsive scaling. */
 
 /* ===========================================
 Medium devices (640px and larger)
-============================================*/
+============================================ */
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
@@ -454,7 +440,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    padding: 8px 0 0 0;
+    padding: 8px 0 0;
   }
 
   nav > ul {
@@ -465,7 +451,8 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 16px;
   }
 
@@ -473,7 +460,8 @@ Medium devices (640px and larger)
     font-size: 30px;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 20px;
   }
 
@@ -494,6 +482,14 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-4 p {
+    text-align: left;
+  }
+
   .strip-black {
     padding: 30px 60px;
     margin: 35px 0;
@@ -505,6 +501,11 @@ Medium devices (640px and larger)
 
   #HERO span {
     display: block;
+  }
+
+  #banner-gatlinburg {
+    background-image: url('../img/gatlinburg/large/Banner_Gat_Dark.jpg');
+    padding: 100px 0;
   }
 
   #PORTFOLIO p {
@@ -555,12 +556,10 @@ Medium devices (640px and larger)
   }
 }
 
-
 /* ===========================================
 Large devices (1024px and larger)
-============================================*/
+============================================ */
 @media only screen and (min-width: 1024px) {
-
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -576,7 +575,8 @@ Large devices (1024px and larger)
     margin-bottom: 30px;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 16px;
   }
 
@@ -584,7 +584,8 @@ Large devices (1024px and larger)
     font-size: 32px;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 21px;
   }
 
@@ -627,12 +628,10 @@ Large devices (1024px and larger)
   }
 }
 
-
 /* ===========================================
-X-Large devices (1440px and larger)
-============================================*/
-@media only screen and (min-width: 1440px) {
-
+X-Large devices (1600px and larger)
+============================================ */
+@media only screen and (min-width: 1600px) {
   .local-nav-menu {
     display: block;
     position: fixed;
@@ -669,5 +668,4 @@ X-Large devices (1440px and larger)
   .ln-active {
     text-transform: capitalize;
   }
-
 }
